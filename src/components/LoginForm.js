@@ -1,28 +1,16 @@
 import { AiTwotoneEye, AiTwotoneEyeInvisible } from "react-icons/ai";
 import './styles.scss'
 
-const RegisterForm = ({
+const LoginForm = ({
   handleSubmit,
-  name,
   email,
   password,
   passwordShown,
   setPasswordShown,
   setEmail,
-  setName,
   setPassword,
 }) => (
   <form onSubmit={handleSubmit} className="mt-3">
-    <div className="form-group mb-3">
-      <label className="form-label">Name</label>
-      <input
-        type="text"
-        className="form-control"
-        placeholder="Enter Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-    </div>
 
     <div className="form-group mb-3">
       <label className="form-label">Email Address</label>
@@ -51,9 +39,9 @@ const RegisterForm = ({
     </div>
     
     <div className="wrap">
-      <button disabled={!name || !email || !password} className="button">Submit</button>
+      <button disabled={!email || !password} className="button">Submit</button>
     </div>
   </form>
 );
 
-export default RegisterForm;
+export default LoginForm;
