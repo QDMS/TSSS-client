@@ -8,6 +8,8 @@ import Login from "./auth/Login";
 import Register from "./auth/Register";
 import Home from "./booking/Home";
 import Dashboard from "./user/Dashboard";
+import DashboardServicer from "./user/DashboardServicer";
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
+        <PrivateRoute exact path="/dashboard/servicer" component={DashboardServicer} />
       </Switch>
     </BrowserRouter>
   );
