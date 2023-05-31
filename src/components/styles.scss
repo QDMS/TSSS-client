@@ -1,9 +1,28 @@
+@font-face {
+  font-family: "Queensides";
+  src: local("Queensides"),
+    url("../fonts/QueensidesMid.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TechnoBoard";
+  src: local("TechnoBoard"),
+    url("../fonts/TechnoBoard.ttf") format("truetype");
+}
+
+.font-face-qs {
+  font-family: "Queensides";
+}
+.font-face-tb {
+  font-family: "TechnoBoard";
+}
+
 .navbar {
     background-color: #270505;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: '';
     font-size: 1.2rem;
     position: sticky;
     top: 0;
@@ -113,6 +132,7 @@
       padding: 1.5rem;
       width: 100%;
       display: table;
+     
     }
   
     .nav-icon {
